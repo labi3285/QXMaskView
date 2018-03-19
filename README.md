@@ -21,7 +21,7 @@ extension DemoView: QXMaskViewContentViewProtocol {
 ```
 
 ```objc
-    let view = DemoView()
-    QXMaskViewController.makeupAndPresent(contentView: view, onVc: self)
+let view = DemoView()
+QXMaskViewController.makeupAndPresent(contentView: view, onVc: self)
 ```
 Have fun!
