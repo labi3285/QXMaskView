@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "QXMaskView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A easy use and customize mask view shower in swift."
   s.description  = <<-DESC
-                    A easy customize tip shower for show success, failure, warning etc. Just enjoy!
+                    Fix a carsh bug when phone is low power.
                    DESC
   s.homepage     = "https://github.com/labi3285/QXMaskView"
   s.license      = "MIT"

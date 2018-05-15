@@ -15,12 +15,12 @@ extension QXMaskViewController {
      */
     @discardableResult public class func makeupAndPresent(contentView: UIView & QXMaskViewContentViewProtocol, onVc: UIViewController?) -> QXMaskViewController {
         let maskView = QXMaskView(contentView: contentView)
-        weak var vc = QXMaskViewController(maskView: maskView)
-        maskView.respondTouchBackground = {
+        let vc = QXMaskViewController(maskView: maskView)
+        maskView.respondTouchBackground = { [weak vc] in
             vc?.dismiss(animated: false, completion: nil)
         }
-        onVc?.present(vc!, animated: false, completion: nil)
-        return vc!
+        onVc?.present(vc, animated: false, completion: nil)
+        return vc
     }
     
 }
